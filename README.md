@@ -1,6 +1,6 @@
 # Morning-Offering-Wesbite-Redesign
 
-Live site coming soon. See code and design mockup instead.
+Live site coming soon. https://petertonon.github.io/Morning-Offering-Wesbite-Redesign/
 
 * Client: Catholic Company (https://www.catholiccompany.com/)
 
