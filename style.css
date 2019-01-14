@@ -42,16 +42,16 @@ h3 {
   font-weight: 400;
 }
 
-img {
+.figure {
   height: 12rem;
   width: 10.5rem;
 }
 
 .header {
-  height: 65vh;
+  height: 70vh;
   background-image: url(assets/nikola-knezevic-729887-unsplash.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   position: relative;
 }
 
@@ -105,12 +105,20 @@ img {
   margin: 0 0 1rem 1rem;
 }
 
+.nav-item {
+  margin: 0 2rem;
+}
+
 .main_nav ul {
   list-style: none;
   background: white;
   display: flex;
   align-items: center;
   width: 100%;
+}
+
+#logo {
+  width: 40rem;
 }
 
 .main_nav li {
@@ -225,17 +233,9 @@ img {
   margin: 5rem 0 0 0;
 }
 
-.center-text-b {
-  position: relative;
-}
 
-.testimonials {
-  margin: 0;
-  padding: 0;
-  background-color: #d3d6dc;
+.reflections_header {
   text-align: center;
-  width: 100%;
-  position: relative;
 }
 
 .testimonial-text {
@@ -244,6 +244,25 @@ img {
   color: #656668;
 }
 
+.testimonal {
+  padding: 4% 15% 0 15%;
+
+
+}
+
+.carousel {
+  height: 25rem;
+  /* background-color: #717171; */
+  background-color: #b1b1b1;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
 
 .footer {
   text-align: center;
@@ -259,34 +278,6 @@ img {
   list-style: none;
 }
 
-.mySlides {
-  position: absolute;
-  text-align: center;
-  padding: 0 10%;
-  font-size: 2.5rem;
-}
-
-.slideshow-container {
-  position: relative;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 1%;
-  color: white;
-  font-weight: bold;
-  font-size: 3rem;
-  transition: 0.6s ease;
-  border-radius: 0 5px 5px 0;
-}
-
-.prev {
-  left: 0;
-}
 
 /* Position the "next button" to the right */
 .next {
@@ -299,30 +290,12 @@ img {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 2rem;
-  width: 2rem;
-  margin: 0 3px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.2s ease;
-  position: relative;
+
+
+.active {
+  background-color: #b1b1b1;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 
 .btnslider {
   margin-top: 20rem;
@@ -346,7 +319,6 @@ img {
 
 .social_links {
   height: 4rem;
-  width: 4rem;
   padding: 0 .75rem;
 }
 
@@ -354,6 +326,7 @@ img {
   padding-top: 1rem;
   font-size: 2rem;
   text-align: center;
+  font-weight: 100;
 }
 
 #reflections-heading {
@@ -362,6 +335,8 @@ img {
   font-weight: 400;
   letter-spacing: .25rem;
   padding: 1rem 0;
+  text-align: center;
+  background-color: #b1b1b1;
 }
 
 #cc {
@@ -382,12 +357,69 @@ img {
   padding-top: 1rem;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+
+
+/* BOOTSTRAP CSS */
+
+
+@media (min-width: 800px)
+.navbar-expand-lg .navbar-collapse {
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+
+
+@media only screen and (max-width: 800px) {
+
+  .heading-primary--main, .heading-primary--sub {
+    font-size: 3rem;
+  }
+
+  #reflections-heading {
+    font-size: 2.8rem;
+  }
+
+  .btnslider {
+    margin-top: 20rem;
+  }
+  #joinnow {
+    font-size: 1.5rem;
+  }
+  .carousel {
+    height: 30rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  body {
+    padding: 0;
+  }
+  .header {
+    height: 80vh;
+  }
+  #logo {
+    max-width: 100%;
+  }
+  .btnslider {
+    margin-top: 24rem;
+  }
+  .heading-primary--main, .heading-primary--sub {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .carousel {
+    height: 35rem;
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .heading-primary--main, .heading-primary--sub {
+    font-size: 5rem;
+  }
 }
